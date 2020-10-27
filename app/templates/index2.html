@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Passions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<img src="{{url_for('static', filename = 'thumbs/dunder.webp')}}"/>
+						<h1>My top 7 favorite characters on <strong> The Office! </strong> Also including each characters, real name and seasons they were on. <a href="http://google.com"> This link will tell you where each person is now  </a><br /></h1>
+						<ul class="icons">
+<!--							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>-->
+							<li><a href="https://www.facebook.com/tereya.edwards" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/tereyaedwards/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/wnwanne" class="icon style2 fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon style2 fa-trophy"><span class="label">Senior Project</span></a></li>
+						</ul>
+					</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Thumbnails -->
+                        <h1><a href="https://www.google.com/search?rlz=1C1AVNE_enUS706US707&sxsrf=ALeKk01hlrOjf6aQiq3MVeVO92JPeOZDLw%3A1589897221262&ei=BejDXsrHD8SxytMP37KqgA4&q=michael+scott+where+is+he+now&oq=michael+scott+where+&gs_lcp=CgZwc3ktYWIQAxgDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECCMQJzoHCAAQFBCHAjoKCAAQkQIQRhD7AToFCAAQkQI6BAgAEApQ6k5Y-FVg7mxoAHAAeACAAX6IAcgFkgEDNi4ymAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab">Where is he now?</a></h1>
+							<section class="thumbnails">
+								<div>
+                                    <a href="{{url_for('MichaelScott')}}">
+										<img src="{{url_for('static', filename = 'thumbs/MichaelScott.png')}}"/>
+                                        <h3>Michael Scott</h3>
+									</a>
+									<a href="{{ url_for('static', filename = 'fulls/7A6DA87D-1051-4A6D-B568-F6F6D7D22E0A.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/Andy.jpg')}}"/>
+										<h3>Andy Bernard</h3>
+									</a>
+								</div>
+								<div>
+									<a href="{{ url_for('static', filename = 'fulls/Pam.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/Pam.jpg')}}" />
+										<h3>Pam Beesly</h3>
+									</a>
+									<a href="{{ url_for('static', filename = 'fulls/03.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/Jim Halpert.jpg')}}" />
+										<h3>Jim Halpert</h3>
+									</a>
+									<a href="{{ url_for('static', filename = 'fulls/04.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/Toby.jpg')}}" />
+										<h3>Toby</h3>
+									</a>
+								</div>
+								<div>
+									<a href="{{ url_for('static', filename = 'fulls/05.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/dwight.webp')}}" />
+										<h3>Dwight Schrute</h3>
+									</a>
+									<a href="{{ url_for('static', filename = 'fulls/06.jpg')}}">
+										<img src="{{ url_for('static', filename = 'thumbs/Ryan.jpg')}}" />
+										<h3>Ryan Howard</h3>
+									</a>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>Design inspired by: <a href="http://templated.co">TEMPLATED</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.poptrox.min.js"></script>
+			<script src="../static/js/skel.min.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>
+
+{% endblock %}
